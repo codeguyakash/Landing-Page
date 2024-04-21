@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.bg-image {
+  background-image: url("./assets/hero-section.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
