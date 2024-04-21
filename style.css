@@ -10,8 +10,9 @@
   font-family: "Inter", sans-serif;
 }
 .bg-image {
-  background-image: url("./assets/hero-section.jpg");
+  background-image: url("./assets/business_units_img6.webp");
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
