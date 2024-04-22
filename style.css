@@ -9,10 +9,24 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
 .bg-image {
   background-image: url("./assets/business_units_img6.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+}
+.tech-image {
+  background-image: url("./assets/tech.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
 }
