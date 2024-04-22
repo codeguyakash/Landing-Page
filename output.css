@@ -743,6 +743,14 @@ video {
   width: 100%;
 }
 
+.w-0{
+  width: 0px;
+}
+
+.w-9{
+  width: 2.25rem;
+}
+
 .min-w-0{
   min-width: 0px;
 }
@@ -840,6 +848,10 @@ video {
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -1431,6 +1443,10 @@ video {
 
   .md\:h-\[50vh\]{
     height: 50vh;
+  }
+
+  .md\:w-1\/2{
+    width: 50%;
   }
 
   .md\:grid-cols-2{
