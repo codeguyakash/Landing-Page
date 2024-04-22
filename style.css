@@ -24,6 +24,31 @@
   background-repeat: no-repeat;
   background-color: black;
 }
+.stock-ticker {
+  padding: 20px;
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+  overflow: hidden;
+  --gap: 20px;
+  display: flex;
+  gap: var(--gap);
+}
+
+.stock-ticker ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+  animation: scroll 20s linear infinite;
+  margin: 0 20px;
+}
+
+.stock-ticker:hover ul {
+  animation-play-state: paused;
+}
 
 @keyframes scroll {
   to {
