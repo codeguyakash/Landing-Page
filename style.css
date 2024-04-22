@@ -17,6 +17,12 @@
   background-repeat: no-repeat;
   height: 100vh;
 }
+.bg-shape {
+  background-image: url("./assets/background-abstract-line-digital-design-gradient-template_483537-2161.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .bg-service {
   background-image: url("./assets/footprint-bg.jpg");
   background-size: cover;
