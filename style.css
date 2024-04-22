@@ -17,6 +17,12 @@
   background-repeat: no-repeat;
   height: 100vh;
 }
+.bg-service {
+  background-image: url("./assets/footprint-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .tech-image {
   background-image: url("./assets/tech.jpg");
   background-size: auto;
@@ -26,15 +32,17 @@
 }
 .stock-ticker {
   padding: 20px;
-  border-top: 5px solid;
-  border-bottom: 5px solid;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
   overflow: hidden;
   --gap: 20px;
   display: flex;
+  cursor: pointer;
   gap: var(--gap);
 }
 
 .stock-ticker ul {
+  cursor: pointer;
   list-style: none;
   flex-shrink: 0;
   min-width: 100%;
@@ -48,6 +56,7 @@
 
 .stock-ticker:hover ul {
   animation-play-state: paused;
+  cursor: pointer;
 }
 
 @keyframes scroll {
