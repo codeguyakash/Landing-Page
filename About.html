@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Additional CSS styles that are not covered by Tailwind classes */
+
+      /* Keyframe animations */
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+
+      @keyframes fadeInRight {
+        0% {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="tech-img h-screen">
+    <nav class="bg-gray-800 w-full py-5 px-5 bg-opacity-50 backdrop-blur-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <a href="#" class="text-white text-2xl">Logo</a>
+        </div>
+        <div class="md:hidden">
+          <a class="text-4xl text-white" href="#">&#8801;</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="/index.html" class="text-white">Home</a>
+          <a href="/About.html" class="text-white">About</a>
+          <a href="/ContactUs.html" class="text-white">Contact US</a>
+          <a href="/Forget.html" class="text-white">Forget</a>
+          <a href="/Login.html" class="text-white">Login</a>
+        </div>
+      </div>
+    </nav>
+    <section class="">
+      <div class="heading">
+        <h2 class="text-red-500 text-5xl text-center">About Us</h2>
+      </div>
+      <div class="container flex justify-center items-center mx-auto mt-16">
+        <div class="hero-content flex-1 w-96 mx-4 animate-fade-in-up">
+          <h2 class="text-3xl mb-4 text-gray-800">Welcome to our website</h2>
+          <p class="text-lg mb-8 text-gray-600 leading-relaxed">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ex
+            vero ducimus nihil temporibus fuga ullam? Nihil optio nostrum vero
+            dolores deleniti voluptatem magnam. At quibusdam laudantium sint
+            optio unde.
+          </p>
+          <button
+            class="bg-red-500 text-white px-6 py-3 rounded-lg text-xl transition duration-300 hover:bg-red-600"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="hero-images flex-1 w-96 mx-4 animate-fade-in-right">
+          <img src="/assets/images/img2.jpg" class="w-full rounded-lg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- -->
+
+    <section class="bg-slate-50">
+      <div class="heading">
+        <h2 class="text-red-500 text-5xl text-center">Mission Statement</h2>
+      </div>
+      <div class="container flex justify-center items-center mx-auto mt-16">
+        <div class="hero-content flex-1 w-96 mx-4 animate-fade-in-up">
+          <h2 class="text-3xl mb-4 text-gray-800">Welcome to our website</h2>
+          <p class="text-lg mb-8 text-gray-600 leading-relaxed">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ex
+            vero ducimus nihil temporibus fuga ullam? Nihil optio nostrum vero
+            dolores deleniti voluptatem magnam. At quibusdam laudantium sint
+            optio unde.
+          </p>
+          <button
+            class="bg-red-500 text-white px-6 py-3 rounded-lg text-xl transition duration-300 hover:bg-red-600"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="hero-images flex-1 w-96 mx-4 animate-fade-in-right">
+          <img src="/assets/images/img3.jpg" class="w-full rounded-lg" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
