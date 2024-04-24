@@ -1,0 +1,250 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Hide overflow to prevent vertical scroll if video is too tall */
+}
+
+.banner-video {
+  width: 100%;
+  height: auto; /* Adjust the height automatically */
+}
+
+.card-container {
+  position: relative;
+  z-index: 10; /* Higher than video */
+}
+
+/* Additional styling for the cards, if necessary */
+
+.card-container .card {
+  max-width: 18rem; /* Set a max-width for the cards if desired */
+  margin: auto; /* Center the cards inside the carousel item */
+}
+
+.carousel-item {
+  text-align: center; /* Center the text inside the cards */
+}
+
+
+
+
+
+
+gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* spacing between images */
+  justify-content: center;
+}
+.gallery img {
+  width: 20px; /* Reducing width to make images appear smaller */
+  height: auto;
+  border: 1px solid #ccc; /* Optional: adds a slight border around each image */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow to enhance visibility */
+  transition: transform 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.1); /* Slightly enlarges the image on hover for interactive effect */
+  cursor: pointer; /* Changes the cursor to indicate clickable */
+}
+
+
+
+
+
+
+
+*
+{
+margin:0;
+padding:0;
+font-family:Quicksand,sans-serif;
+box-sizing:border-box;
+}
+
+section
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 1px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+section span
+{
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  z-index: 2;
+  background: #181818;
+  transition: 1.5s;
+}
+
+section span:hover
+{
+  background: #0f0;
+  transition: 0s;
+}
+
+body
+{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+
+}
+
+section .signin
+{
+  position: absolute;
+  width: 400px;
+  background: #222;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+section .signin .content
+{
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+section .signin .content h2
+{
+  font-size: 2rem;
+  color: #0f0;
+  text-transform: uppercase;
+
+} 
+
+section .signin .content .form
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+} 
+
+section .signin .content .form .inputBx
+{
+  position: relative;
+  width: 100%;
+} 
+
+section .signin .content .form .inputBx input
+{
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+
+} 
+
+section .signin .content .form .inputBx i
+{
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+
+} 
+
+section .signin .content .form .inputBx input:focus ~i,
+section .signin .content .form .inputBx input:valid ~i
+
+{
+  transform: translate(-7.5px);
+  font-size: 0.8rem;
+  color: #fff;
+
+} 
+
+.signin .content .form .links
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+} 
+ .signin .content .form .links a
+{
+  color: #fff;
+  text-decoration: none;
+} 
+
+.signin .content .form .links a:nth-child(2)
+{
+  color: #0f0;
+  font-weight: 600;
+} */
+
+.signin .content .form .inputBx input[type="submit"] {
+
+
+  padding: 10px;
+  background: #0f0;
+  color: #111;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+} 
+
+@media(max-width:900px)
+{
+  section span
+{
+  position: relative;
+  display: block;
+  width: calc(10vw - 2px);
+  height: calc(10vw - 2px);
+  z-index: 2;
+  background: #181818;
+}
+
+}
+
+@media(max-width:600px)
+{
+  section span
+{
+  
+  width: calc(20vw - 2px);
+  height: calc(20vw - 2px);
+  
+}
+
+}
