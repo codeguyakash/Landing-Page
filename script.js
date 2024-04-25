@@ -1,24 +1,15 @@
-document.addEventListener("click", function () {
-  const carousel = document.querySelector(".carousel");
-  const prevButton = carousel.querySelector(".prev");
-  const nextButton = carousel.querySelector(".next");
-  const inner = carousel.querySelector(".carousel-inner");
-  const items = carousel.querySelectorAll(".testimonial");
-  const itemWidth = items[0].offsetWidth;
+let timer = setInterval(updateCounter, 50);
 
-  let currentIndex = 0;
-
-  prevButton.addEventListener("click", function () {
-    if (currentIndex > 0) {
-      currentIndex--;
-      inner.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-    }
-  });
-
-  nextButton.addEventListener("click", function () {
-    if (currentIndex < items.length - 1) {
-      currentIndex++;
-      inner.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-    }
-  });
-});
+function updateCounter() {
+  let counterElement = document.getElementById("counter1");
+  let counterElement2 = document.getElementById("counter2");
+  let counterElement3 = document.getElementById("counter3");
+  let count = parseInt(counterElement.textContent);
+  if (count == 399) {
+    clearInterval(timer);
+  }
+  count++;
+  counterElement.textContent = count;
+  counterElement2.innerText = count;
+  counterElement3.innerText = count;
+}
