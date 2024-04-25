@@ -13,7 +13,10 @@
     </style>
   </head>
 
-  <body class="bg-gray-100">
+  <body
+    class="inset-0 bg-cover bg-center"
+    style="background-image: url('/assets/footprint-bg.jpg')"
+  >
     <nav class="bg-gray-800 w-full py-5 px-5 bg-opacity-50 backdrop-blur-lg">
       <div class="container mx-auto flex justify-between items-center">
         <div class="flex items-center">
@@ -32,7 +35,12 @@
       </div>
     </nav>
     <div class="min-h-screen flex items-center justify-center">
-      <div class="bg-white p-8 rounded shadow-md w-full sm:w-96">
+      <div
+        class="bg-white p-8 rounded shadow-md w-full sm:w-96"
+        style="
+          background-image: url('/assets/background-abstract-line-digital-design-gradient-template_483537-2161.avif');
+        "
+      >
         <h2 class="text-2xl font-semibold text-center mb-6">Login</h2>
         <form>
           <div class="mb-4">
@@ -58,9 +66,9 @@
           <div class="flex items-center justify-between mb-4">
             <button
               type="submit"
-              class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none"
+              class="bg-green-600 text-white px-16 py-3 rounded-full mt-2 hover:bg-blue-600 focus:outline-none"
             >
-              Login
+              Sign In
             </button>
             <a href="/Forget.html" class="text-blue-500 hover:underline"
               >Forgot Password?</a
@@ -70,7 +78,9 @@
         <hr class="my-6 border-gray-300" />
         <p class="text-center text-gray-700">
           Don't have an account?
-          <a href="#" class="text-blue-500 hover:underline">Sign Up</a>
+          <a href="/Signup.html" class="text-blue-500 hover:underline"
+            >Sign Up</a
+          >
         </p>
       </div>
     </div>
