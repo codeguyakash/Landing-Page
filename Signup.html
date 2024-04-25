@@ -8,32 +8,354 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <style>
-      /* Additional custom styles can be added here */
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body
     class="inset-0 bg-cover bg-center"
     style="background-image: url('/assets/footprint-bg.jpg')"
   >
-    <nav class="bg-gray-800 w-full py-5 px-5 bg-opacity-50 backdrop-blur-lg">
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="flex items-center">
-          <a href="#" class="text-white text-2xl">Logo</a>
-        </div>
-        <div class="md:hidden">
-          <a class="text-4xl text-white" href="#">&#8801;</a>
-        </div>
-        <div class="hidden md:flex items-center space-x-4">
-          <a href="/index.html" class="text-white">Home</a>
-          <a href="/About.html" class="text-white">About</a>
-          <a href="/ContactUs.html" class="text-white">Contact US</a>
-          <a href="/Forget.html" class="text-white">Forget</a>
-          <a href="/Login.html" class="text-white">Login</a>
+    <div
+      class="container-fluid bg-gray-800 w-full md:flex hidden py-5 px-5 bg-opacity-50 backdrop-blur-lg"
+    >
+      <div class="row">
+        <div
+          class="col-lg-9 col-12 customPosition d-lg-flex justify-content-lg-end align-items-center"
+        >
+          <div class="mainMenuWrapper d-lg-flex align-items-lg-center">
+            <!-- Nav -->
+            <ul class="navListing newListing">
+              <li class="navItem">
+                <a
+                  href="#"
+                  data-toggle="collapse"
+                  data-target=".whatWeDo"
+                  aria-expanded="false"
+                  >All &#9660; <i class="fas fa-caret-down"></i
+                ></a>
+                <div
+                  class="navSubmenu midiumMegaMunu whatWeDo collapeseShow collapse text-left"
+                  data-parent=".mainMenuWrapper"
+                >
+                  <div class="containerBlock">
+                    <ul class="thirdLevelMenu">
+                      <li class="active">
+                        <ul class="fourthLevelMenu">
+                          <li><a href="#"> Web Development </a></li>
+                          <li class="active deActiveColor">
+                            <a href="#">App Development</a>
+                            <ul class="fifthLevelMenu collapse pl-2 pl-lg-0">
+                              <li>
+                                <div class="row justify-content-xl-between">
+                                  <div class="col-lg-5 col-xl-6">
+                                    <div class="cardBlock pr-xl-2"></div>
+                                  </div>
+                                  <div class="col-lg-5 col-xl-6">
+                                    <div class="cardBlock pl-xl-2">
+                                      <p class="mb-1">News</p>
+                                      <div class="imgThumbCol">
+                                        <a href="#"
+                                          ><picture
+                                            ><img
+                                              src="#"
+                                              class=""
+                                              alt="" /></picture
+                                        ></a>
+                                      </div>
+                                      <div class="mb-2 mb-lg-0 bottomTextLink">
+                                        <a href="#"
+                                          >XYZ strengthen its services portfolio
+                                          with the addition of Automotive
+                                          Engineering and Manufacturing Services
+                                          for global markets</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li><a href="#">SEO </a></li>
+                          <li><a href="#">Digital Marketing</a></li>
+                          <li><a href="#">IT Support </a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#" class="stong_protext"
+                          >Manufacturing
+                          <img class="ml-2 show-right-menu" src="#"
+                        /></a>
+                        <ul class="fourthLevelMenu">
+                          <li class="active deActiveColor">
+                            <a href="#">PCB Assembly</a>
+                            <ul
+                              class="fifthLevelMenu fiftheLevelHide pl-2 pl-lg-0"
+                            >
+                              <li>
+                                <div class="row justify-content-xl-between">
+                                  <div class="col-lg-5 col-xl-6">
+                                    <div class="cardBlock pr-xl-2">
+                                      <p class="mb-1">News</p>
+                                      <div class="imgThumbCol">
+                                        <a href="#"
+                                          ><picture
+                                            ><img
+                                              src="#"
+                                              class=""
+                                              alt="" /></picture
+                                        ></a>
+                                      </div>
+                                      <div class="mb-3 mb-lg-0 bottomTextLink">
+                                        <a href="#"
+                                          >XYZ Strikes Back-to-Back
+                                          Manufacturing Expansions to Meet
+                                          Increased Global Business</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-5 col-xl-6">
+                                    <div class="cardBlock pl-xl-2">
+                                      <p class="mb-1">News</p>
+                                      <div class="imgThumbCol">
+                                        <a href="#"
+                                          ><picture
+                                            ><img
+                                              src="#"
+                                              class=""
+                                              alt="" /></picture
+                                        ></a>
+                                      </div>
+                                      <div class="mb-2 mb-lg-0 bottomTextLink">
+                                        <a href="#"
+                                          >XYZ Inks Contract with C-DAC to
+                                          Manufacture India’s first indigenously
+                                          designed HPC server</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Product Assembly</a></li>
+                          <li>
+                            <a href="#"
+                              >Proto, Mold Making, Mechanical Manufacturing
+                              Facility</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#"
+                              >Testing, Validation &amp; Certification</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="stong_protext"
+                          >Cloud and Applications
+                          <img class="ml-2 show-right-menu" src="#"
+                        /></a>
+                        <ul class="LicenseSales fourthLevelMenu">
+                          <li class="active deActiveColor">
+                            <ul
+                              class="fifthLevelMenu fiftheLevelHide pl-2 pl-lg-0"
+                            >
+                              <li>
+                                <div class="row justify-content-xl-between">
+                                  <div class="col-lg-5 col-xl-6">
+                                    <div class="cardBlock pr-xl-2">
+                                      <p class="mb-1">Blog</p>
+                                      <div class="imgThumbCol">
+                                        <a href="#"
+                                          ><picture
+                                            ><img
+                                              src="#"
+                                              class=""
+                                              alt="" /></picture
+                                        ></a>
+                                      </div>
+                                      <div class="mb-3 mb-lg-0 bottomTextLink">
+                                        <a href="#"
+                                          >Why is Data Lake the next big thing
+                                          in Data management and
+                                          optimization?</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-5 col-xl-6">
+                                    <div class="cardBlock pl-xl-2">
+                                      <p class="mb-1">Case Study</p>
+                                      <div class="imgThumbCol">
+                                        <a href="#"
+                                          ><picture
+                                            ><img
+                                              src="#"
+                                              class=""
+                                              alt="" /></picture
+                                        ></a>
+                                      </div>
+                                      <div class="mb-2 mb-lg-0 bottomTextLink">
+                                        <a href="#"
+                                          >IoT Cloud Platform on Microsoft
+                                          Azure</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="active deActiveColor">
+                            <a href="#">Cloud Engineering Services</a>
+                          </li>
+                          <li><a href="#">Application Services</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a target="_blank" href="#" class="stong_protext"
+                          >License Sales
+                          <img class="ml-2 show-right-menu" src="#"
+                        /></a>
+                        <ul class="LicenseSales fourthLevelMenu license_div">
+                          <li class="active deActiveColor">
+                            <a target="_blank" href="#">Ametek</a>
+                            <ul
+                              class="fifthLevelMenu fiftheLevelHide pl-2 pl-lg-0"
+                            >
+                              <li>
+                                <div class="row justify-content-xl-between">
+                                  <div class="col-lg-5 col-xl-6">
+                                    <div class="cardBlock pr-xl-2">
+                                      <ul>
+                                        <li>
+                                          <a target="_blank" href="#">Megger</a>
+                                        </li>
+                                        <li>
+                                          <a target="_blank" href="#"
+                                            >National Instruments (NI)</a
+                                          >
+                                        </li>
+                                        <li>
+                                          <a target="_blank" href="#">PICO</a>
+                                        </li>
+                                        <li>
+                                          <a target="_blank" href="#"
+                                            >QA Systems</a
+                                          >
+                                        </li>
+                                        <li>
+                                          <a target="_blank" href="#"
+                                            >esd electronics</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-5 col-xl-6">
+                                    <div class="cardBlock pr-xl-2">
+                                      <ul>
+                                        <li>
+                                          <a target="_blank" href="#"
+                                            >Rohde & Schwarz</a
+                                          >
+                                        </li>
+                                        <li>
+                                          <a target="_blank" href="#">SEGGER</a>
+                                        </li>
+                                        <li>
+                                          <a target="_blank" href="#"
+                                            >TASKING</a
+                                          >
+                                        </li>
+                                        <li>
+                                          <a target="_blank" href="#">TRM</a>
+                                        </li>
+                                        <li>
+                                          <a target="_blank" href="#">Weller</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li><a target="_blank" href="#">Hioki</a></li>
+                          <li><a target="_blank" href="#">iSYSTEM</a></li>
+                          <li><a target="_blank" href="#">Kikusui</a></li>
+                          <li><a target="_blank" href="#">Igos</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="navItem">
+                <a
+                  href="#"
+                  data-toggle="collapse"
+                  data-target=".IndustriesMenu"
+                  aria-expanded="false"
+                  >Business Units &#9660; <i class="fas fa-caret-down"></i
+                ></a>
+                <div
+                  class="navSubmenu IndustriesMenu collapeseShow collapse"
+                  data-parent=".mainMenuWrapper"
+                >
+                  <ul>
+                    <li><a href="#">Cloud and Applications</a></li>
+                    <li><a href="#">Cloud and Applications</a></li>
+                    <li><a href="#">Cloud and Applications</a></li>
+                    <li><a href="#">Cloud and Applications</a></li>
+                    <li><a href="#">Cloud and Applications</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navItem">
+                <a
+                  href="#"
+                  data-toggle="collapse"
+                  data-target=".aboutvvdnMenu"
+                  aria-expanded="false"
+                  >About &#9660; <i class="fas fa-caret-down"></i
+                ></a>
+                <div
+                  class="navSubmenu aboutvvdnMenu collapeseShow collapse"
+                  data-parent=".mainMenuWrapper"
+                >
+                  <ul>
+                    <li><a href="/About.html">About</a></li>
+                    <li><a href="#">Company Overview</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navItem">
+                <a href="/ContactUs.html">Contact Us</a>
+              </li>
+              <li class="navItem">
+                <a href="/Forget.html">Forget</a>
+              </li>
+              <li class="navItem">
+                <a href="/Login.html">Sign In</a>
+              </li>
+            </ul>
+
+            <!-- /Nav -->
+          </div>
         </div>
       </div>
-    </nav>
+      <div class="md:hidden flex bg-red-600">
+        <a class="text-4xl text-white" href="#">&#8801;</a>
+      </div>
+    </div>
     <div
       class="min-h-screen flex items-center justify-center flex-col md:flex-row"
     >

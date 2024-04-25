@@ -47,7 +47,7 @@
 .stock-ticker {
   padding: 20px;
   border-top: 1px solid #e5e7eb;
-  border-bottom: 1px solid #e5e7eb;
+
   overflow: hidden;
   --gap: 20px;
   display: flex;
@@ -76,5 +76,310 @@
 @keyframes scroll {
   to {
     transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/* ----------------------------------Menu----- */
+.mainMenuWrapper ul.navListing li {
+  display: inline-block;
+}
+
+.mainMenuWrapper ul.navListing li.navItem .navSubmenu.midiumMegaMunu ul li {
+  display: block;
+}
+
+.mainMenuWrapper ul.navListing li > a {
+  display: block;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 13px;
+  transition: all ease-in-out 0.2s;
+
+  font-weight: 500;
+}
+
+.mainMenuWrapper ul.navListing a {
+  color: #bababa;
+  text-decoration: none;
+}
+
+.mainMenuWrapper ul.navListing li > .navSubmenu li a:before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 1px;
+  background: #000000;
+  left: 0;
+  top: 17px;
+}
+
+.mainMenuWrapper ul.navListing li > .navSubmenu li:first-child a::before {
+  display: none;
+}
+
+.thirdLevelMenu {
+  width: 205px;
+  position: relative;
+}
+
+.cardBlock .imgThumbCol img {
+  width: 100%;
+}
+
+.mainMenuWrapper ul.navListing .cardBlock .bottomTextLink a,
+.mainMenuWrapper
+  ul.navListing
+  li.navItem
+  .navSubmenu.midiumMegaMunu
+  ul.thirdLevelMenu
+  > li
+  .cardBlock
+  .bottomTextLink
+  a:hover {
+  font-weight: 400;
+}
+
+/* ................................imp.... */
+@media (min-width: 992px) {
+  .hamBugarmenuBlock {
+    display: none;
+  }
+
+  .mainMenuWrapper ul.navListing li.navItem:hover .navSubmenu.collapse {
+    display: table;
+  }
+
+  .midiumMegaMunu {
+    max-width: 100%;
+  }
+
+  .midiumMegaMunu strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  ul.navListing li > .navSubmenu.midiumMegaMunu li a:before {
+    display: none;
+  }
+
+  .mainMenuWrapper ul.navListing li > .navSubmenu.midiumMegaMunu li a {
+    padding: 5px 0;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+  }
+
+  .mainMenuWrapper ul.navListing li.navItem .navSubmenu.midiumMegaMunu {
+    padding: 20px 15px;
+  }
+
+  .collapeseShow.collapse:not(.show) {
+    display: block;
+  }
+
+  .navbar-brand {
+    margin-left: 27px;
+  }
+
+  .fifthLevelMenu.collapse:not(.show),
+  .fourthLevelMenu.collapse:not(.show) {
+    display: block;
+  }
+
+  .mobileCarret {
+    display: none;
+  }
+
+  .show-right-menu {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+  }
+
+  ul.thirdLevelMenu > li.active .show-right-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  ul.thirdLevelMenu
+    > li.active
+    > .fourthLevelMenu
+    > .haveFifthLevel:not(.active)
+    .show-right-menu {
+    display: none;
+  }
+  .LicenseSales.fourthLevelMenu.license_div {
+    width: 183px !important;
+  }
+  .fifthLevelMenu,
+  .fourthLevelMenu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 300px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+  }
+
+  .fifthLevelMenu,
+  .fourthLevelMenu {
+    z-index: -1;
+  }
+
+  .mainMenuWrapper
+    ul.navListing
+    li.navItem
+    .navSubmenu.midiumMegaMunu
+    ul.thirdLevelMenu
+    > li.active
+    > ul.fourthLevelMenu {
+    z-index: 1;
+  }
+
+  .fifthLevelMenu {
+    width: 545px;
+  }
+
+  .mainMenuWrapper
+    ul.navListing
+    li.navItem
+    .navSubmenu.midiumMegaMunu
+    ul.thirdLevelMenu
+    > li.active
+    ul.fourthLevelMenu,
+  .mainMenuWrapper
+    ul.navListing
+    li.navItem
+    .navSubmenu.midiumMegaMunu
+    ul.thirdLevelMenu
+    > li
+    > ul.fourthLevelMenu
+    > li.active
+    ul.fifthLevelMenu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mainMenuWrapper
+    ul.navListing
+    li.navItem
+    .navSubmenu.midiumMegaMunu
+    ul.thirdLevelMenu
+    > li
+    a {
+    display: inline-block;
+    transition: all 0.5s ease;
+    width: auto;
+    font-size: 14px;
+  }
+
+  .mainMenuWrapper
+    ul.navListing
+    li.navItem
+    .navSubmenu.midiumMegaMunu
+    ul.thirdLevelMenu
+    > li
+    > ul.fourthLevelMenu
+    li
+    > ul.fifthLevelMenu
+    li
+    ul.sixthLevelMenu
+    > li
+    > a {
+    margin-bottom: 8px;
+  }
+
+  .mainMenuWrapper
+    ul.navListing
+    li.navItem
+    .navSubmenu.midiumMegaMunu
+    ul.thirdLevelMenu
+    > li.active
+    > a,
+  .mainMenuWrapper
+    ul.navListing
+    li.navItem
+    .navSubmenu.midiumMegaMunu
+    ul.thirdLevelMenu
+    > li
+    > a:hover,
+  .mainMenuWrapper
+    ul.navListing
+    li.navItem
+    .navSubmenu.midiumMegaMunu
+    ul.thirdLevelMenu
+    > li
+    > ul.fourthLevelMenu
+    > li.active:not(.deActiveColor)
+    > a {
+    color: #505050;
+  }
+
+  .mainMenuWrapper ul.navListing li.navItem .navSubmenu {
+    box-shadow: -1px 3px 11px 1px rgba(86, 86, 90, 0.2);
+    left: 0;
+    right: 0;
+    padding: 5px 15px;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 101;
+    background: #fff;
+    text-align: center;
+    margin: auto;
+  }
+
+  .mainMenuWrapper ul.navListing li > .navSubmenu li a {
+    font-size: 14px;
+    padding: 17px 32px;
+    position: relative;
+  }
+
+  .mainMenuWrapper ul.navListing li > .navSubmenu li a:hover {
+    color: #505050;
+  }
+
+  .cardBlock .bottomTextLink a {
+    font-size: 13px !important;
+  }
+
+  .mainMenuWrapper ul.navListing li.navItem .navSubmenu {
+    box-shadow: -1px 3px 11px 1px rgba(86, 86, 90, 0.2);
+    left: 0;
+    right: 0;
+    padding: 5px 15px;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 101;
+    background: #fff;
+
+    text-align: center;
+    margin: auto;
+  }
+
+  .mainMenuWrapper ul.navListing li.navItem:hover .navSubmenu {
+    transform: scale(1);
+    visibility: visible;
+  }
+
+  .desk_menu {
+    display: block !important;
+  }
+
+  .mobile_menu {
+    display: none !important;
+  }
+
+  .mobile_caret {
+    display: none;
   }
 }
