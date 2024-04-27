@@ -9,6 +9,12 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+.bg-dots {
+  /* background-color: #121214; */
+  background-image: radial-gradient(#bdbdbd 1px, transparent 0);
+  background-size: 25px 25px;
+  background-position: -11px -11px;
+}
 
 .bg-image {
   background-image: url("./assets/business_units_img6.webp");
