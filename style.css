@@ -46,13 +46,12 @@
 }
 .stock-ticker {
   padding: 20px;
-  border-top: 1px solid #e5e7eb;
-
   overflow: hidden;
   --gap: 20px;
   display: flex;
   cursor: pointer;
   gap: var(--gap);
+  background-color: #cbd5e1;
 }
 
 .stock-ticker ul {
@@ -99,7 +98,7 @@
 }
 
 .mainMenuWrapper ul.navListing a {
-  color: #bababa;
+  color: #000000;
   text-decoration: none;
 }
 
